@@ -85,6 +85,7 @@ ul {
 .content-card {
     width: 45%;
     margin-top: 30px;
+    margin-bottom: 30px;
     border: #777 solid 1px;
     border-radius: 8px;
     padding: 15px;
@@ -332,5 +333,202 @@ footer {
     background-color: #357ab8;
 }
 
+
+form {
+    max-width: 30%; /* フォーム全体の最大幅を設定 */
+    margin: 0 auto; /* フォームを中央揃えに */
+    padding: 20px; /* フォームの内側の余白を設定 */
+    background-color: #fff; /* フォームの背景色を設定 */
+    border: 1px solid #ccc; /* フォームの境界線を設定 */
+    border-radius: 10px; /* 角を丸くする */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 軽い影を付ける */
+}
+
+.form-group {
+    display: flex; /* 横並びにする */
+    align-items: center; /* 中央揃えにする */
+    margin-bottom: 10px; /* 各フォームグループの間隔を縮める */
+    width: 100%;
+}
+
+.form-group label {
+    flex: 0 0 30%; /* ラベルの幅を調整 */
+    font-weight: bold;
+    margin-right: 10px; /* ラベルと入力欄の間にスペースを作る */
+}
+
+.form-group input,
+.form-group select {
+    flex: 1; /* 入力欄が残りのスペースを占める */
+    padding: 8px; /* 入力欄の内側の余白を縮める */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form-submit {
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.form-submit input[type="submit"],
+.form-submit button[type="button"] {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* ボタン間のスペース */
+}
+
+.form-submit input[type="submit"]:hover,
+.form-submit button[type="button"]:hover {
+    background-color: #357ab8;
+}
+
+.form-group {
+    display: flex; /* 横並びにする */
+    align-items: center; /* 中央揃えにする */
+    margin-bottom: 10px; /* 各フォームグループの間隔を縮める */
+    width: 100%;
+}
+
+.form-group label {
+    flex: 0 0 25%; /* ラベルの幅を調整 */
+    font-weight: bold;
+    margin-right: 5px; /* ラベルと入力欄の間のスペースを縮める */
+}
+
+.form-group input,
+.form-group select {
+    flex: 1; /* 入力欄が残りのスペースを占める */
+    padding: 8px; /* 入力欄の内側の余白を縮める */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form-group label {
+    flex: 0 0 20%; /* ラベルの幅をさらに調整 */
+    font-weight: bold;
+    margin-right: 5px; /* ラベルと入力欄の間のスペースをさらに縮める */
+}
+
+.form-group input,
+.form-group select {
+    flex: 1; /* 入力欄が残りのスペースを占める */
+    padding: 8px; /* 入力欄の内側の余白を縮める */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form-submit input[type="submit"],
+.form-submit button[type="button"] {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* ボタン間のスペース */
+}
+
+.form-submit input[type="submit"]:hover,
+.form-submit button[type="button"]:hover {
+    background-color: #357ab8;
+}
+
+/* クリアボタンのスタイル */
+.form-submit button[type="button"] {
+    background-color: rgba(74, 144, 226, 0.2); /* 透明感のある背景色 */
+    color: #4a90e2; /* ボタンの文字色を設定 */
+    border: 1px solid #4a90e2; /* ボーダーを設定 */
+}
+
+.form-submit button[type="button"]:hover {
+    background-color: rgba(74, 144, 226, 0.4); /* ホバー時の透明感のある背景色 */
+}
+
+/* 検索ボタンのスタイル */
+.form-submit input[type="submit"] {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 20px; /* 検索ボタンのパディング */
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* ボタン間のスペース */
+}
+
+.form-submit input[type="submit"]:hover {
+    background-color: #357ab8;
+}
+
+/* クリアボタンのスタイル */
+.form-submit button[type="button"] {
+    background-color: rgba(74, 144, 226, 0.2); /* 透明感のある背景色 */
+    color: #4a90e2; /* ボタンの文字色を設定 */
+    border: 1px solid #4a90e2; /* ボーダーを設定 */
+    padding: 5px 15px; /* クリアボタンのパディングを減らす */
+}
+
+.form-submit button[type="button"]:hover {
+    background-color: rgba(74, 144, 226, 0.4); /* ホバー時の透明感のある背景色 */
+}
+
+
+.customer-table {
+    width: 100%;
+    border-collapse: collapse; /* ボーダーの二重表示を防ぐ */
+    margin-top: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* テーブル全体に影をつける */
+}
+
+.customer-table th,
+.customer-table td {
+    border: 1px solid #ddd; /* セルの境界線を薄い灰色にする */
+    padding: 10px;
+    text-align: left; /* テキストを左揃えにする */
+}
+
+.customer-table th {
+    background-color: #f2f2f2; /* ヘッダーセルの背景色を薄い灰色にする */
+    font-weight: bold;
+}
+
+.customer-table td {
+    background-color: #fff; /* データセルの背景色を白にする */
+}
+
+.customer-table tr:nth-child(even) td {
+    background-color: #f9f9f9; /* 偶数行の背景色を薄い灰色にする */
+}
+
+.customer-table tr:hover td {
+    background-color: #f1f1f1; /* ホバー時の行の背景色を少し濃い灰色にする */
+}
+
+.customer-table td button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.customer-table td button:hover {
+    background-color: #357ab8;
+}
 
 
