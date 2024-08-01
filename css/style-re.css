@@ -335,3 +335,8 @@ form {
 .customer-table td button:hover {
     background-color: #357ab8;
 }
+
+.vali-group{
+    text-align: center;
+    color: red;
+}
