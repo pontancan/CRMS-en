@@ -33,7 +33,7 @@
             <div class="form-subtitle">
                 <h3>必要な項目を入力後、「検索」ボタンを押してください。</h3>
             </div>
-            <form action="">
+            <form  id="searchForm" action="/index.html" method="get">
                 <div class="form-group">
                     <label for="name">姓名</label>
                     <input type="text" id="name" name="name">
@@ -84,8 +84,8 @@
                     <div id="company_message" class="message"></div> <br />
                 </div>
                 <div class="form-submit">
-                    <input type="submit" id="searchForm" value="検索">
-                    <button type="button">クリア</button>
+                    <input type="submit" id="submit" value="検索">
+                    <button type="button" id="clearButton">クリア</button>
                 </div>
                 <div class="vali-group">
                     <div id="submit_message" class="message" style="line-height: 1.5;"></div> <br />

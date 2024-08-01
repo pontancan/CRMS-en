@@ -62,7 +62,7 @@ function validateDob() {
     if (input_dob_start.value.trim() === '' || input_dob_end.value.trim() === '') {
         dob_message.innerText = '入力は必須です';
         isDobValid = false;
-    }else {
+    } else {
         dob_message.innerText = '';
         isDobValid = true;
     }
@@ -141,6 +141,26 @@ input_submit.addEventListener("submit", (e) => {
         e.preventDefault();
     }
 });
+
+document.getElementById('clearButton').addEventListener('click', () => {
+    let input_name = document.getElementById('name');
+    let input_kana = document.getElementById('kana');
+    let input_gender = document.getElementById('gender');
+    let input_dob_start = document.getElementById('dob_start');
+    let input_dob_end = document.getElementById('dob_end');
+    let input_company = document.getElementById('company');
+
+
+    // input_name.value = '';
+    // input_kana.value = '';
+    // input_gender.selectedIndex = 0;
+    // input_dob_start.value = '';
+    // input_dob_end.value = '';
+    // input_company.selectedIndex = 0;
+    location.reload();
+});
+
+
 
 
 
