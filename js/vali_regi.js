@@ -38,10 +38,14 @@ function validateName() {
 }
 
 function validateKana() {
+    const re =/^[\u30A0-\u30FF]+$/;
     if (input_kana.value.trim() === '') {
         kana_message.innerText = '入力は必須です';
         isKanaValid = false;
-    } else if (input_kana.value.trim().length < 3) {
+    } else if (!re.test(input_kana.value.trim()) ) {
+        kana_message.innerText = '全角カタカナで入力してください';
+        isKanaValid = false;
+    }else if (input_kana.value.trim().length < 3) {
         kana_message.innerText = '3文字以上必要です';
         isKanaValid = false;
     } else {
@@ -65,7 +69,7 @@ function validateEmail() {
 }
 
 function validatePhone() {
-    const re = /^\d{9,10}$/;
+    const re = /^\d{10,11}$/;
     if (input_phone.value.trim() === '') {
         phone_message.innerText = '入力は必須です';
         isPhoneValid = false;
