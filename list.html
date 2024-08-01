@@ -38,12 +38,16 @@
                     <label for="name">姓名</label>
                     <input type="text" id="name" name="name">
                 </div>
-
+                <div class="vali-group">
+                    <div id="name_message" class="message"></div> <br />
+                </div>
                 <div class="form-group">
                     <label for="name_kana">セイメイ</label>
-                    <input type="text" id="name_kana" name="name_kana">
+                    <input type="text" id="kana" name="name_kana">
                 </div>
-
+                <div class="vali-group">
+                    <div id="kana_message" class="message"></div> <br />
+                </div>
                 <div class="form-group">
                     <label for="gender">性別</label>
                     <select id="gender" name="gender">
@@ -51,17 +55,21 @@
                         <option value="male">男性</option>
                         <option value="female">女性</option>
                         <option value="other">その他</option>
-                        <option value="other">全て</option>
+                        <option value="all">全て</option>
                     </select>
                 </div>
-
+                <div class="vali-group">
+                    <div id="gender_message" class="message"></div> <br />
+                </div>
                 <div class="form-group">
                     <label for="dob_start">生年月日</label>
                     <input type="date" id="dob_start" name="dob_start">
                     <span>~</span>
                     <input type="date" id="dob_end" name="dob_end">
                 </div>
-
+                <div class="vali-group">
+                    <div id="dob_message" class="message"></div> <br />
+                </div>
                 <div class="form-group">
                     <label for="company">所属会社</label>
                     <select id="company" name="company">
@@ -72,11 +80,16 @@
                         <option value="all">全て</option>
                     </select>
                 </div>
-
+                <div class="vali-group">
+                    <div id="company_message" class="message"></div> <br />
+                </div>
                 <div class="form-submit">
-                    <input type="submit" value="検索">
+                    <input type="submit" id="searchForm" value="検索">
                     <button type="button">クリア</button>
                 </div>
+                <div class="vali-group">
+                    <div id="submit_message" class="message" style="line-height: 1.5;"></div> <br />
+                </div> 
             </form>
             <hr>
             <table class="customer-table">
@@ -99,7 +112,7 @@
                         <td>A社</td>
                         <td>2024/07/01<br>2024/07/01</td>
                         <td><button><a href="./edit.html" class="edit-button">編集</a></button></td>
-                        <td><button class="delete-button"popovertarget="my-popover">削除</button></td>
+                        <td><button class="delete-button" popovertarget="my-popover">削除</button></td>
                         <div id="my-popover" popover>
                             <h2>一度削除したデータは元に戻せません。本当に削除してもよろしいでしょうか。</h2>
                             <button class="delete">削除</button>
@@ -113,7 +126,7 @@
                         <td>A社</td>
                         <td>2024/07/02<br>2024/07/03</td>
                         <td><button><a href="./edit.html" class="edit-button">編集</a></button></td>
-                        <td><button class="delete-button"popovertarget="my-popover">削除</button></td>
+                        <td><button class="delete-button" popovertarget="my-popover">削除</button></td>
                     </tr>
                     <tr>
                         <td>0003</td>
@@ -122,7 +135,7 @@
                         <td>B社</td>
                         <td>2024/07/02<br>2024/07/02</td>
                         <td><button><a href="./edit.html" class="edit-button">編集</a></button></td>
-                        <td><button class="delete-button"popovertarget="my-popover">削除</button></td>
+                        <td><button class="delete-button" popovertarget="my-popover">削除</button></td>
                     </tr>
                 </tbody>
             </table>
@@ -131,6 +144,7 @@
     <footer class="footer">
         <p>Copyright© dummyインダストリー Inc. All Rights Reserved.</p>
     </footer>
+    <script src="./js/vali_list.js"></script>
 </body>
 
 </html>
