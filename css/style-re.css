@@ -324,7 +324,7 @@ form {
     /* ホバー時の行の背景色を少し濃い灰色にする */
 }
 
-.customer-table td button {
+.customer-table td .edit-button {
     background-color: #4a90e2;
     color: white;
     border: none;
@@ -334,11 +334,22 @@ form {
     cursor: pointer;
 }
 
+.customer-table td .delete-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .customer-table td button:hover {
-    background-color: #357ab8;
+    opacity: 0.6;
 }
 
 .vali-group{
     text-align: center;
     color: red;
 }
+

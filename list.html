@@ -33,7 +33,7 @@
             <div class="form-subtitle">
                 <h3>必要な項目を入力後、「検索」ボタンを押してください。</h3>
             </div>
-            <form  id="searchForm" action="/index.html" method="get">
+            <form  id="searchForm" action="index.html" method="get">
                 <div class="form-group">
                     <label for="name">姓名</label>
                     <input type="text" id="name" name="name">
@@ -101,14 +101,14 @@
                         <th>削除</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
+                <tbody id="customer-table-body">
+                    <!-- <tr>
                         <td>0001</td>
                         <td>山田太郎<br>ヤマダタロウ</td>
                         <td>tyamada@test.com<br>080-4444-0001</td>
                         <td>A社</td>
                         <td>2024/07/01<br>2024/07/01</td>
-                        <td><button><a href="./edit.html" class="edit-button">編集</a></button></td>
+                        <td><button class="edit-button">編集</button></td>
                         <td><button class="delete-button" popovertarget="my-popover">削除</button></td>
                         <div id="my-popover" popover>
                             <h2>一度削除したデータは元に戻せません。本当に削除してもよろしいでしょうか。</h2>
@@ -122,7 +122,7 @@
                         <td>hyamada@test.com<br>080-4444-0002</td>
                         <td>A社</td>
                         <td>2024/07/02<br>2024/07/03</td>
-                        <td><button><a href="./edit.html" class="edit-button">編集</a></button></td>
+                        <td><button class="edit-button">編集</button></td>
                         <td><button class="delete-button" popovertarget="my-popover">削除</button></td>
                     </tr>
                     <tr>
@@ -131,9 +131,10 @@
                         <td>syoshida@test.com<br>080-4444-0003</td>
                         <td>B社</td>
                         <td>2024/07/02<br>2024/07/02</td>
-                        <td><button><a href="./edit.html" class="edit-button">編集</a></button></td>
+                        <td><button class="edit-button">編集</button></td>
                         <td><button class="delete-button" popovertarget="my-popover">削除</button></td>
-                    </tr>
+                    </tr> -->
+                    
                 </tbody>
             </table>
         </div>
@@ -141,8 +142,9 @@
     <footer class="footer">
         <p>Copyright© dummyインダストリー Inc. All Rights Reserved.</p>
     </footer>
-    <script src="./js/vali_list.js"></script>
+    <!-- <script src="./js/vali_list.js"></script> -->
     <script src="./js/useCompanies.js" type="module"></script>
+    <script src="./js/useCustomers.js" type="module"></script>
 </body>
 
 </html>
