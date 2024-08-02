@@ -108,35 +108,35 @@ function validateAll() {
     updateSubmitMessage();
 }
 
-input_name.addEventListener('focusout', () => {
+input_name.addEventListener('blur', () => {
     validateName();
     updateSubmitMessage();
 });
 
-input_kana.addEventListener('focusout', () => {
+input_kana.addEventListener('blur', () => {
     validateKana();
     updateSubmitMessage();
 });
 
 
 
-input_gender.addEventListener('focusout', () => {
+input_gender.addEventListener('blur', () => {
     validateGender();
     updateSubmitMessage();
 });
 
-input_dob_start.addEventListener('focusout', () => {
+input_dob_start.addEventListener('blur', () => {
     validateDob();
     updateSubmitMessage();
 });
-input_dob_end.addEventListener('focusout', () => {
+input_dob_end.addEventListener('blur', () => {
     validateDob();
     updateSubmitMessage();
 });
 
 
 
-input_company.addEventListener('focusout', () => {
+input_company.addEventListener('blur', () => {
     validateCompany();
     updateSubmitMessage();
 });

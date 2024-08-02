@@ -123,7 +123,7 @@ function updateSubmitMessage() {
     if (!isGenderValid) messages.push("性別が無効です");
     if (!isDobValid) messages.push("生年月日が無効です");
     if (!isCompanyValid) messages.push("所属会社が無効です");
-    submit_message.innerText = messages.join("\n");
+    submit_message.innerText = messages.join("\n");//messages 配列内の各要素を改行文字 (\n) でつないで、一つの文字列にまとめる
 }
 //TODO 無効ならフィールド背景赤に
 
@@ -138,37 +138,37 @@ function validateAll() {
     updateSubmitMessage();
 }
 
-input_name.addEventListener('focusout', () => {
+input_name.addEventListener('blur', () => {
     validateName();
     updateSubmitMessage();
 });
 
-input_kana.addEventListener('focusout', () => {
+input_kana.addEventListener('blur', () => {
     validateKana();
     updateSubmitMessage();
 });
 
-input_email.addEventListener('focusout', () => {
+input_email.addEventListener('blur', () => {
     validateEmail();
     updateSubmitMessage();
 });
 
-input_phone.addEventListener('focusout', () => {
+input_phone.addEventListener('blur', () => {
     validatePhone();
     updateSubmitMessage();
 });
 
-input_gender.addEventListener('focusout', () => {
+input_gender.addEventListener('blur', () => {
     validateGender();
     updateSubmitMessage();
 });
 
-input_dob.addEventListener('focusout', () => {
+input_dob.addEventListener('blur', () => {
     validateDob();
     updateSubmitMessage();
 });
 
-input_company.addEventListener('focusout', () => {
+input_company.addEventListener('blur', () => {
     validateCompany();
     updateSubmitMessage();
 });
